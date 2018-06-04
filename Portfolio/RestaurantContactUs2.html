@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Restaurant Contact Us 2</title>
+<!-- <link href="c:\portfolio\restaurant2 css.css"
+	   rel="stylesheet"
+	   type="text/css" />  -->
+</head>
+<body>
+<center><h1>Restaurant Rey 2</h1></center>
+<hr>
+	<p>
+		<a href="c:\portfolio\Restauranthome2.html"\"> Home</a> 
+		<a href="c:\portfolio\restaurantmenu2.html" > <!--target="_blank"--> Menu</a>
+		<a href="c:\portfolio\restaurantcontactus2.html" > <!--target="_blank">--> Contact Us</a>
+	</p>
+<hr>
+<p>    </p>
+<div style="text-align:center">
+<form action="submit.html" method="POST">
+				<label for="fullName">Name:</label>
+				<input type="text" id="fullName" name="fullName"><br /> <br>
+				<label for="Email">Email:</label>
+				<input type="text" id="Email" name="Email"><br /> <br>
+				<label for="phone">Phone:</label>
+				<input type="text" id="phone" name="phone"><br/> <br>
+				<label for="contact">Reason for Inquiry:</label>
+				<select id="contact" name="contact">
+				<option value="default" selected>Catering</option> <br>
+				<option value="pparty">Private Party</option>
+				<option value="feedback">Feedback</option>
+				<option value="other">Other</option>
+				</select>
+				<br> <br>
+				<label for="info">Additional Information:</label> <br />
+				<textarea 
+				id="info" style="width:200px; height: 150px;">
+				</textarea><br />
+				
+				<fieldset>
+				<legend>Have You been to the restaurant?</legend> <br />
+				<input type="radio" id="choice1" name="questionaire" value="No">
+				<label for="choice1">No</label>
+				<input type="radio" id="choice2" name="questionaire" value="Yes">
+				<label for="choice2">Yes</label> <br />
+				</fieldset>
+				
+				<fieldset>
+				<legend>Best days to contact you:</legend><br />
+				<input type="checkbox" id="choice1" name="questionaire" value="M">
+				<label for="choice1">M</label>
+				<input type="checkbox" id="choice2" name="questionaire" value="T">
+				<label for="choice2">T</label>
+				<input type="checkbox" id="choice3" name="questionaire" value="W">
+				<label for="choice3">W</label>
+				<input type="checkbox" id="choice4" name="questionaire" value="R">
+				<label for="choice4">Th</label>
+				<input type="checkbox" id="choice5" name="questionaire" value="F">
+				<label for="choice5">F</label><br />
+				</fieldset>
+				
+				<input type="submit" name="SendRequest" value="Send Request">
+</form>
+</div>
+				<hr>
+		<footer>  
+		<center>
+		<p> 123 Main Street, SoftwareGuildville, NY 12345  </P>
+		<p>  (201) 555-1212 &copy; 2018 Rey Viqueira  </p>
+		</center>
+		</footer>
+<hr>
+</body>
+</html>

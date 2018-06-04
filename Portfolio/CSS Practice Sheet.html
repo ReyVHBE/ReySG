@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Practice Sheet</title>
+
+
+<style> 
+           <!-- Elememt/Tag selectors allow you to select a group of items based on their html tag -->
+	li {
+		border-bottom: 1px dashed black;
+		}
+		
+		#product2 {       <!-- ID selectors are meant to target one item -->
+			border: 3px red dashed;
+		}
+	
+		.warning {   <!-- Hides the display warning -->
+			font-weight: bold;
+			color: red;
+		}
+		
+		div.warning {
+			font-style: italic;
+			}
+		
+		body  { background-image: url("C:\Portfolio\CSS\images\confetti.gif");
+				background-repeat: repeat;
+			<!--	background-color: #cccccc;  -->
+			}
+		tbody tr:nth-child(even) { background-color: LemonChiffon; )	
+		tbody tr:nth-child(odd) { background-color: LawnGreen;  }
+		
+</style>
+</head>
+
+
+<body>
+<h1> CSS Practice Sheet !!!</h1>
+
+
+
+	<ul>
+		<li>Sam</li>
+		<li>John</li>
+		<li>Chris</li>
+	</ul>
+
+	
+
+	<div id="product1" style="text-align:justify;width: 50px;">  <!-- Added  style="text-align:justify;width: 50px;" to justify with to 50px -->
+		<h2>Awesome Product</h2
+		<p> ;kh;lkhlkhlkh;lh;kh;lk';k';katakanakjg
+			kjgkljglkjglkjglkjgklhglkhjglkjgkjglkjgjkg 
+			hjgkjhglkjglkjglkjglkjg;kjgjkkjgftrtstesah
+			hjfjhfjhfjhfjhkjhlkjl/kj/;lj;lj;lj;lj';lj;
+			kjglkjgkjlglkjglkjghfghdfjhgdhgfdhgfdffhlk
+		</P>
+	</div>
+	
+	<div id="product2" style="text-indent: 65%;width: 50px;">   <!--  style="text-indent: 65%; width: 50px;"    -->
+		<h2>More Awesome Product</h2>
+		<p> ;kh;lkhlkhlkh;lh;kh;lk';k';katakanakjg
+			kjgkljglkjglkjglkjgklhglkhjglkjgkjglkjgjkg
+			hjgkjhglkjglkjglkjglkjg;kjgjkkjgftrtstesah
+			hjfjhfjhfjhfjhkjhlkjl/kj/;lj;lj;lj;lj';lj;
+			kjglkjgkjlglkjglkjghfghdfjhgdhgfdhgfdffhlk
+		</P>
+	</div>
+	
+	<div id="product3">
+		<h2>Most Awesome Product</h2>
+		<p style="text-transform: uppercase;"> ;kh;lkhlkhlkh;lh;kh;lk';k';katakanakjg  <!-- make all uppercase -->
+			kjgkljglkjglkjglkjgklhglkhjglkjgkjglkjgjkg
+			<span style="text-transform: none; color: dodgerblue;">  <!-- Make this segment with no uppercase to this span and color it dodgerblue -->
+			hjgkjhglkjglkjglkjglkjg;kjgjkkjgftrtstesah
+			</span>
+			<span style="text-transform: capitalize;">  <!--capitalize first letter -->
+			hjfjhf jhfjhfjhk jhlkjl/ kj/;lj;lj;lj;lj';lj;
+			kjglk jgkjlg lkjglkjg hfghdfjhgd hgfdhg fdffhlk
+			</span>
+		</P>
+	</div>
+	
+	<div class="warning">
+	The following Errors occurred:
+	</div>
+	<p class="warning">First name is required.</P>
+	<label for="firstname">First Name</label>
+	<input type="textbox" name="firstname"/>
+	<P class="warning">Last name is required.</p>
+	<label for="lastname">Last Name</label>
+	<input type="textbox" name="lastname"/>
+	
+<p style="color:red;font-weight:bold;"> These fields are required. </p> <!-- example of inline style -->
+
+
+<div style="background-color: rgb(255,0,0);">Red background using rgba </div>
+<div style="background-color:rgba(255,0,0,0.5);">Red with 50% rgba opacity</div>
+<div style="background-color: #ff0000;">Red using hexadecimal</div>
+<div style="background-color: #f00;">Red using hexadecimal simplified</div>
+<div style="background-color: blue;">Blue using text color</div>
+
+<p> 
+	This is <span style="text-decoration:underline;">   underlined.</span>	
+	This is <span style="text-decoration:overline;">   overlined.</span>
+	This is <span style="text-decoration:line-through;">  Line through.</span>
+</p>
+
+<!--  BASIC TABLE -->
+
+<table>
+	<caption> Table Caption </caption>
+	<thead>
+		<tr>
+			<th>Heading1</th>
+			<th>Heading2</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>Lorem</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Ipsum</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Dolor</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Lorem</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="2">Table Footer Text</td>
+		</tr>
+	</tfoot>
+</table>
+		
+<!--  BASIC TABLE plus -->
+
+<style>
+	table { width: 100%; }
+	
+	th { height: 50px; }
+	
+	table, th, td {
+		border: 1px solid black;<!--  Adds a border on a table using CSS -->
+		border-collapse:collapse;
+		padding-top: 5px;
+		padding-right: 0px;
+		padding-bottom: 5px;
+		padding-left: 10px;
+		}
+		
+		tfoot td { text-align: center;  }  <!-- center alignes the footer -->
+		
+
+		
+
+		
+</style>
+
+<table> 								<!-- puts a border with html not css   <table border="1">   -->
+	<caption> Table Caption </caption>
+	<thead>
+		<tr>
+			<th>Heading1</th>  <!-- <th> is center aligned by default <td> is left aligned -->
+			<th>Heading2</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>Lorem</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Ipsum</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Dolor</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Lorem</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="2">Table Footer Text</td>
+		</tr>
+	</tfoot>
+</table>
+				
+	
+</body>
+</html>
